@@ -79,7 +79,7 @@ db.restaurants.find().sort({"name":-1})
 
 27. Escribe una función find() para organizar el nombre de la cocina en orden ascendente y para ese mismo distrito de cocina debe estar en orden descendente.
 ```javascript
-db.restaurants.find().sort({"borought":-1,"cuisine":1})
+db.restaurants.find().sort({"name":-1, "cuisine":-1})
 ```
 
 28. Escribe una función find() para saber si todas las direcciones contienen la calle o no.
