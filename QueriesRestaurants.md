@@ -94,7 +94,7 @@ db.restaurants.find({"address.coord":{$type:"double"}})
 
 30. Escribe una función find() que seleccionará el ID del restaurante, el nombre y las calificaciones para esos restaurantes que devuelve 0 como resto después de dividir la puntuación por 7.
 ```javascript
-
+db.restaurants.find({"grades.score":{$mod:[7,0]}},{"name":1,"grades.score":1})
 ```
 
 31. Escribe una función find() para encontrar el nombre del restaurante, el municipio, la longitud y la actitud y la cocina de aquellos restaurantes que contienen "mon" como tres letras en algún lugar de su nombre.
