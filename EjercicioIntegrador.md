@@ -2,6 +2,7 @@
 
 ## Luciano Montes de Oca Villa - 173670
 
+
 4. Cómo podemos saber si los tuiteros hispanohablantes interactúan más en las noches?
 ```javascript
 db.tweets.aggregate([         
@@ -14,6 +15,7 @@ db.tweets.aggregate([
 ])
 ```
 
+
 5. Cómo podemos saber de dónde son los tuiteros que más tiempo tienen en la plataforma?
 ```javascript
 db.tweets.aggregate([
@@ -24,8 +26,9 @@ db.tweets.aggregate([
 ])
 ```
 
+
 6. En intervalos de 7:00:00pm a 6:59:59am y de 7:00:00am a 6:59:59pm, de qué paises la mayoría de los tuits?
-<br>
+
 Intervalo de 7:00:00pm a 6:59:59am
 ```javascript
 db.tweets.aggregate([
@@ -35,6 +38,7 @@ db.tweets.aggregate([
   {$sort: {"conteo":-1}}
 ])
 ```
+
 Intervalo de 7:00:00am a 6:59:59pm
 ```javascript
 db.tweets.aggregate([
@@ -44,6 +48,7 @@ db.tweets.aggregate([
   {$sort: {"conteo":-1}}
 ])
 ```
+
 
 7. De qué país son los tuiteros más famosos de nuestra colección?
 ```javascript
