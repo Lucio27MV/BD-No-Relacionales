@@ -2,6 +2,6 @@
 
 Tareas y proyectos de la materia Bases de Datos No Relacionales
 
-Primavera 2021
+Otoño 2021
 
 ITAM
